@@ -1,0 +1,166 @@
+@charset "utf-8";
+@import "fonts";
+
+$blue: #00005d;
+$transparent_blue: rgba(0, 2, 93, 0.3);
+
+body, .button {
+  @include font_open_sans_regular;
+}
+
+body {
+  background: lightgray;
+}
+
+#workshop_manager {
+  background: white;
+
+  a {
+    @include font_open_sans_bold;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @include font_open_sans_bold;
+  }
+
+  #header {
+    margin-bottom: 10px;
+  }
+
+  .app_row {
+    margin: 0 5px;
+  }
+
+  .small_spacer {
+    height: 40px;
+  }
+
+  .button {
+    .fa {
+        padding-right: 5px;
+    }
+  }
+
+  .workshop_manager_dialog {
+    border: solid 1px white;
+    padding: 20px 30px 0 30px;
+    border-radius: 0;
+    background: white;
+    .ui-dialog-content {
+      padding: 0;
+    }
+    .ui-dialog-titlebar {
+      display: none;
+    }
+  }
+  .ui-widget-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  #event_input {
+    overflow: visible;
+    .button {
+      margin-left: 20px;
+    }
+    input[type='checkbox'] {
+      display: block;
+      margin: 10px;
+    }
+    // to hide the clear button on chrome
+    input[type='date']::-webkit-clear-button {
+      display: none;
+    }
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+  }
+
+  #event_calendar {
+    table {
+      border: none;
+    }
+    .fc-header {
+      margin-bottom: -5px;
+      border: none;
+      .fc-header-title > h2 {
+        font-size: 1rem !important;
+      }
+    }
+
+    .fc-widget-content, .fc-widget-header {
+      border-color: $transparent_blue;
+      background: white;
+    }
+
+    .fc-event {
+      border-radius: 0 !important;
+      border: 2px solid rgba(0,0,0,0);
+      padding: 5px 1px;
+      background: rgb(255,127,0);
+
+      &.selected {
+        border-color: $blue;
+      }
+
+      &.workshop {
+        background: rgb(228,26,28);
+      }
+      &.open_shop {
+        background: rgb(55,126,184);
+      }
+      &.tour {
+        background: rgb(77,175,74);
+      }
+      &.misc {
+        background: rgb(152,78,163);
+      }
+    }
+
+    .fc-event-inner {
+      display: inline;
+    }
+
+    .fc-event-time {
+      display: none;
+    }
+
+    .fc-button {
+      border-radius: 0;
+      background: none;
+      box-shadow: none;
+    }
+  }
+
+  #event_details {
+    .details_instructor, .details_cost {
+      @include font_open_sans_italic;
+      padding-top: 10px;
+    }
+    .details_description {
+      padding-top: 10px;
+    }
+    .details_register {
+      margin-top: 10px;
+    }
+    .details_edit {
+      margin-left: 20px;
+      .fa { padding-right: 5px; }
+    }
+  }
+
+  #event_toolbar {
+    .button {
+      margin-right: 0.35rem;
+    }
+    #event_subtoolbar {
+      .button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        .fa { padding: 0; }
+      }
+    }
+  }
+
+}
