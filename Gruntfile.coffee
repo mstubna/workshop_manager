@@ -47,7 +47,8 @@ module.exports = ->
       options:
         join: true
       project:
-        files: ['build/javascripts/workshop_manager.js': 'source/coffeescripts/*']
+        files: ['build/javascripts/workshop_manager.js': 'source/coffeescripts/workshop_manager/*.coffee',
+                'build/javascripts/main.js': 'source/coffeescripts/*.coffee']
 
     # convert scss -> css
     sass:

@@ -1,3 +1,6 @@
+$ ->
+  new WorkshopManager
+
 class WorkshopManager
 
   constructor: ->
@@ -74,7 +77,6 @@ class WorkshopManager
     @view = $('#workshop_manager')
     @header = $("
       <div id='header' class='app_row row'>
-        <div class='small-12 columns'><h4>Events</h4></div>
       </div>")
     left_container = $("<div class='small-12 medium-8 columns'></div>")
     right_container = $("<div class='small-12 medium-4 columns'></div>")
