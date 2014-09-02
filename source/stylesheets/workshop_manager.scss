@@ -105,16 +105,28 @@ body {
       }
 
       &.workshop {
-        background: rgb(228,26,28);
+        background: rgba(228,26,28,0.8);
+        &.selected {
+          background: rgb(228,26,28);
+        }
       }
       &.open_shop {
-        background: rgb(55,126,184);
+        background: rgba(55,126,184,0.8);
+        &.selected {
+          background: rgb(55,126,184);
+        }
       }
       &.tour {
-        background: rgb(77,175,74);
+        background: rgba(77,175,74,0.8);
+        &.selected {
+          background: rgb(77,175,74);
+        }
       }
       &.misc {
-        background: rgb(152,78,163);
+        background: rgba(152,78,163,0.8);
+        &.selected {
+          background: rgb(152,78,163);
+        }
       }
     }
 
