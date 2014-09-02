@@ -12,6 +12,30 @@ body {
   background: lightgray;
 }
 
+.index {
+  .header {
+    background: url('../images/bg_1.jpg');
+    width: 100%;
+    background-size: cover;
+    opacity: 0.8;
+    &.header_medium {
+      height: 100px;
+    }
+    &.header_large {
+      height: 200px;
+    }
+  }
+  h1 {
+    color: black;
+  }
+  .content {
+    margin-top: 15px;
+    .button {
+      margin-right: 15px;
+    }
+  }
+}
+
 #workshop_manager {
   background: white;
 
