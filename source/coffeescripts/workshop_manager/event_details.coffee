@@ -5,8 +5,12 @@ class @EventDetails
     @construct_view parent_view
 
   construct_view: (parent_view) ->
-    @view = $("<div id='event_details'></div>")
+    @view = $("<div class='event_details'></div>")
     parent_view.append @view
+
+    @view.on 'click', =>
+      $(this).trigger 'view_clicked'
+      return false
 
   update_view: (event) ->
     @view.empty()

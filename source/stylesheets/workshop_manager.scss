@@ -47,16 +47,12 @@ body {
     @include font_open_sans_bold;
   }
 
-  #header {
-    margin-bottom: 10px;
-  }
-
   .app_row {
     margin: 0 5px;
   }
 
-  .small_spacer {
-    height: 40px;
+  .new_button {
+    margin-top: 10px;
   }
 
   .button {
@@ -169,7 +165,7 @@ body {
     }
   }
 
-  #event_details {
+  .event_details {
     .details_instructor, .details_cost {
       @include font_open_sans_italic;
       padding-top: 10px;
@@ -186,11 +182,11 @@ body {
     }
   }
 
-  #event_toolbar {
+  .event_toolbar {
     .button {
       margin-right: 0.35rem;
     }
-    #event_subtoolbar {
+    .event_subtoolbar {
       .button {
         padding-left: 1rem;
         padding-right: 1rem;
@@ -198,5 +194,13 @@ body {
       }
     }
   }
+}
 
+.right-off-canvas-menu {
+  background: white;
+  padding-left: 10px;
+}
+
+.move-left .exit-off-canvas {
+  box-shadow: none;
 }
