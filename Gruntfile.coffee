@@ -35,9 +35,6 @@ module.exports = ->
       stylesheets:
         files: ['source/stylesheets/**']
         tasks: 'sass'
-      markdown:
-        files: ['source/content/**', 'source/templates/**']
-        tasks: 'markdown'
       assets:
         files: ['source/images/**', 'source/vendor/**', 'source/fonts/**', 'source/views/**']
         tasks: 'copy:assets'
@@ -77,7 +74,6 @@ module.exports = ->
   @loadNpmTasks 'grunt-exec'
   @loadNpmTasks 'grunt-contrib-coffee'
   @loadNpmTasks 'grunt-contrib-sass'
-  @loadNpmTasks 'grunt-markdown'
   @loadNpmTasks 'grunt-contrib-watch'
   @loadNpmTasks 'grunt-contrib-copy'
   @loadNpmTasks 'grunt-aws-s3'
