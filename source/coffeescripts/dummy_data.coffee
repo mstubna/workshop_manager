@@ -28,9 +28,9 @@ class @DummyData
     description_2 = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     [
       {
-        title: 'Workshop 1',
-        start: '2014-07-01T01:23'
-        end: '2014-07-11T00:00'
+        title: 'Workshop 1'
+        start: '2014-09-01T01:23'
+        end: '2014-09-05T00:00'
         allDay: false
         instructor: 'john_doe'
         type: 'workshop'
@@ -39,9 +39,9 @@ class @DummyData
         id: 1000
       },
       {
-        title: 'Workshop 2',
-        start: '2014-07-7',
-        end: '2014-07-8'
+        title: 'Workshop 2'
+        start: '2014-09-22'
+        end: '2014-09-26'
         allDay: true
         instructor: 'william_jones'
         type: 'workshop'
@@ -50,9 +50,9 @@ class @DummyData
         id: 1001
       },
       {
-        title: 'Workshop 3',
-        start: '2014-07-12'
-        end: '2014-07-14'
+        title: 'Workshop 3'
+        start: '2014-10-06'
+        end: '2014-10-10'
         allDay: true
         instructor: 'jane_smith'
         type: 'workshop'
@@ -61,9 +61,9 @@ class @DummyData
         id: 1002
       },
       {
-        title: 'Tour 1',
-        start: '2014-07-12'
-        end: '2014-07-15'
+        title: 'Tour 1'
+        start: '2014-09-12'
+        end: '2014-09-13'
         allDay: true
         instructor: 'william_jones'
         type: 'tour'
@@ -72,9 +72,9 @@ class @DummyData
         id: 1003
       },
       {
-        title: 'Tour 2',
-        start: '2014-07-12'
-        end: '2014-07-16'
+        title: 'Tour 2'
+        start: '2014-09-13'
+        end: '2014-09-14'
         allDay: true
         instructor: 'william_jones'
         type: 'tour'
@@ -84,8 +84,8 @@ class @DummyData
       },
       {
         title: 'Tour 3'
-        start: '2014-07-14'
-        end: '2014-07-15'
+        start: '2014-09-26'
+        end: '2014-09-27'
         allDay: true
         instructor: 'john_doe'
         type: 'tour'
@@ -95,8 +95,8 @@ class @DummyData
       },
       {
         title: 'Tour 4'
-        start: '2014-07-31'
-        end: '2014-08-1'
+        start: '2014-09-27'
+        end: '2014-09-28'
         allDay: true
         type: 'tour'
         description: description
@@ -104,48 +104,66 @@ class @DummyData
         id: 1006
       },
       {
-        title: 'Open shop 1',
-        start: '2014-07-13'
-        end: '2014-07-14'
+        title: 'Open Shop'
+        start: '2014-09-10'
+        end: '2014-09-11'
         allDay: true
         type: 'open_shop'
         description: description_2
         id: 1007
       },
       {
-        title: 'Open shop 2',
-        start: '2014-07-16T9:00'
-        end: '2014-07-16T14:00'
+        title: 'Open Shop'
+        start: '2014-09-24T12:00'
+        end: '2014-09-24T18:00'
         allDay: false
         type: 'open_shop'
         description: description_2
         id: 1008
       },
       {
-        title: 'Open shop 3',
-        start: '2014-07-21'
-        end: '2014-07-22'
-        allDay: true
+        title: 'Open Shop',
+        start: '2014-10-01T12:00'
+        end: '2014-10-01T18:00'
+        allDay: false
         type: 'open_shop'
         description: description_2
         id: 1009
       },
       {
-        title: 'Misc event 1',
-        start: '2014-07-20'
-        end: '2014-07-22'
-        allDay: true
-        type: 'misc'
+        title: 'Open Shop',
+        start: '2014-10-08T12:00'
+        end: '2014-10-08T18:00'
+        allDay: false
+        type: 'open_shop'
         description: description_2
         id: 1010
       },
       {
+        title: 'Open Shop',
+        start: '2014-10-15T12:00'
+        end: '2014-10-15T18:00'
+        allDay: false
+        type: 'open_shop'
+        description: description_2
+        id: 1011
+      },
+      {
+        title: 'Misc event 1',
+        start: '2014-09-20'
+        end: '2014-09-22'
+        allDay: true
+        type: 'misc'
+        description: description_2
+        id: 1012
+      },
+      {
         title: 'Misc event 2',
-        start: '2014-07-21T12:00'
-        end: '2014-07-26T14:00'
+        start: '2014-09-29T12:00'
+        end: '2014-10-01T14:00'
         allDay: false
         type: 'misc'
         description: description_2
-        id: 1011
+        id: 1013
       }
     ]
