@@ -75,9 +75,7 @@ class WorkshopManager
 
   construct_view: ->
     @view = $('#workshop_manager')
-    @header = $("
-      <div id='header' class='app_row row'>
-      </div>")
+    @header = $("<div id='header' class='app_row row'></div>")
     left_container = $("<div class='small-12 medium-8 columns'></div>")
     right_container = $("<div class='small-12 medium-4 columns'></div>")
     @calendar_view = $("<div class='row'></div>")
