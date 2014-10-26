@@ -2,54 +2,41 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 
-    <title>Bryn Athyn Forging</title>
+    <title>Workshop Manager</title>
     <link rel="stylesheet" href="vendor/foundation.css">
+    <link rel="stylesheet" href="vendor/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/jquery-ui.custom.min.css">
     <link rel="stylesheet" href="stylesheets/workshop_manager.css">
+    <link href="vendor/fullcalendar.css" rel="stylesheet" />
     <script src="vendor/modernizr.js"></script>
+    <script src="vendor/moment.min.js"></script>
     <script src="vendor/jquery-2.1.0.js"></script>
+    <script src="vendor/jquery-ui.custom.min.js"></script>
     <script src="vendor/foundation.min.js"></script>
+    <script src="vendor/fullcalendar.js"></script>
+    <script src="vendor/jquery.ui.touch-punch.js"></script>
     <script src="vendor/fastclick.js"></script>
+    <script src="javascripts/workshop_manager.js"></script>
     <script src="javascripts/main.js"></script>
   </head>
   <body>
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="index.html">Bryn Athyn Forging</a></h1>
+          <h1><a href="index.html">Home</a></h1>
         </li>
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
       </ul>
       <section class="top-bar-section">
         <ul class="left">
-          <li><a href="calendar.html">Calendar of Events</a></li>
-          <li><a href="gallery.html">Photo Gallery</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li class="active"><a href="index.html">Calendar of Events</a></li>
         </ul>
       </section>
     </nav>
-    <div id="container" class="index">
-      <div class="header header_medium show-for-medium-only"></div>
-      <div class="header header_large show-for-large-up"></div>
-      <div class="content row">
-        <div class="small-12 columns clearfix">
-          <a class="tiny button left" href="calendar.html">Register for Classes</a>
-          <p>View and register for upcoming classes on the calendar of events</p>
-        </div>
-      </div>
-      <div class="content row">
-        <div class="small-12 columns clearfix">
-          <a class="tiny button left" href="gallery.html">View Latest Photos</a>
-          <p>View the photo gallery and tag your own photos with #brynathynforging in Instagram to add them</p>
-        </div>
-      </div>
-      <div class="content row">
-        <div class="small-12 columns clearfix">
-          <a class="tiny button left" href="blog.html">Read the Blog</a>
-          <p>All the latest news is on the blog</p>
-        </div>
-      </div>
+    <div id="container" class="row">
+      <div id="workshop_manager" class="small-12 columns"></div>
     </div>
   </body>
 </html>

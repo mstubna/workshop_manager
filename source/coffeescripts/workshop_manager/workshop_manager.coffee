@@ -112,6 +112,9 @@ class WorkshopManager
       @toggle_off_canvas() if @is_off_canvas_open() and not @is_small_media_query()
     , 300)
 
+    # initialize the calendar to Sept 2014, where the dummy data is located
+    @event_calendar.view.fullCalendar 'gotoDate', '2014-09-01T00:00:00Z'
+
   update_details: (event) =>
     @event_details.update_view event
     @event_details_aside.update_view event
